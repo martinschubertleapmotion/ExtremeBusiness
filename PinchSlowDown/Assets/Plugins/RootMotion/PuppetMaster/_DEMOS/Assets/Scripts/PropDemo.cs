@@ -16,12 +16,12 @@ namespace RootMotion.Demos {
 		public PropRoot connectTo;
 		
 		void Update () {
-			if (IsHolding = true) {
+			if (IsHolding == true) {
 				// Makes the prop root drop any existing props and pick up the newly assigned one.
 				connectTo.currentProp = prop;
 			}
 
-			if (IsHolding = false) {
+			if (IsHolding == false) {
 				// By setting the prop root's currentProp to null, the prop connected to it will be dropped.
 				connectTo.currentProp = null;
 			}
